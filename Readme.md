@@ -3,7 +3,6 @@
 This repository implements a set of runtime enforcement algorithms and supporting automata structures.  
 It includes:
 
-- DFA-based property modeling  
 - Ideal Enforcer  
 - Compositional Enforcer
 - Monolithic Least-Effort Enforcer  
@@ -49,8 +48,7 @@ Contains:
 - AND/OR product DFA
 - Least-effort monolithic enforcer
 - Serial compositional enforcer
-- Parallel compositional enforcer (non-exclusive)
-- σc / σs buffer-based enforcement logic
+- Parallel compositional enforcer
 
 ## 4. ExclusiveMonoEnforcer.py
 Implements **Exclusive Modified Automata (A′)** by:
@@ -59,8 +57,9 @@ Implements **Exclusive Modified Automata (A′)** by:
 - Producing A1′ and A2′
 
 ## 5. ExclusiveParallelEnforcer.py
-Implements **Algorithm 7 — Exclusive Parallel Enforcer** with:
+Implements **Exclusive Parallel Enforcer** with:
 - `σc`, `σs` buffers
+- and multiple enforcers running in parallel
 
 ## 6. Exclusive Modified Automata (A′)
 
@@ -121,7 +120,7 @@ python ExampleScenario/Logging_AV/OutputParallelExclusive.py
 ```
 
 ## ExclusiveModifiedAutomata.py
-Debug tool for A1′ and A2′.
+To see Modified Automata A1′ and A2′.
 ```
 python ExampleScenario/Logging_AV/ExclusiveModifiedAutomata.py
 ```
