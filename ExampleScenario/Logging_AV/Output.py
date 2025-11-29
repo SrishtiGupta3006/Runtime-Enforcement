@@ -9,7 +9,7 @@ sourcedir=os.path.join(sourcedir, 'Source')
 sys.path = [sourcedir] + sys.path
 
 import Enforcer
-import Automata
+import helper.Automata as Automata
 import copy
 import random
 import numpy

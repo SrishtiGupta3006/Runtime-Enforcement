@@ -1,5 +1,5 @@
 ## imports ########################################################################################
-import Automata
+import helper.Automata as Automata
 import collections
 import itertools
 from itertools import islice

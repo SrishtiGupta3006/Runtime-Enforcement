@@ -16,8 +16,8 @@ import sys
 sys.path.append("..")
 
 from Enforcer import enforcer        
-import Automata
-from Automata import DFA as BaseDFA
+import helper.Automata as Automata
+from helper.Automata import DFA as BaseDFA
 
 
 #helper Classes
@@ -114,7 +114,7 @@ def product(A, B, p_name):
 
 def product_or(A, B, p_name):
     """
-    Build OR-product DFA.
+    OR-product DFA.
 
     Accepting condition: at least one DFA accepts.
 
